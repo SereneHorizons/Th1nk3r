@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Th1nk3r {
 	
-	String[] questions = {"Trolley Problem", "Fate and Free Will", "Religion", "Corruptability of Complete Power", "Necessity of Suffering"};
+	String[] questions = {"Trolley Problem", "Fate and Free Will", "Religion", "Corruptability of Absolute Power", "Necessity of Suffering"};
 	int[] questionCounts = new int[10];
 	private void setQuestionCount(int i, int j)
 	{
@@ -32,7 +32,7 @@ public class Th1nk3r {
 	}
 	public void askQuestion(int i, Scanner in)
 	{
-		System.out.println("What are your thoughts on the " + questions[i] + "?");
+		System.out.println("\nWhat are your thoughts on the " + questions[i] + "?");
 		questionList[i].ask();
 		System.out.println("Would you choose option 1 or 2?");
 		String input = in.nextLine();
@@ -68,35 +68,43 @@ public class Th1nk3r {
         {
             public void ask()
             {
-            	System.out.println("Trolley Problem Placeholder");
+            	System.out.println("A runaway Trolley is heading down the tracks about to hit 5 people.");
+            	System.out.println("You can, however, pull a lever to divert the train from the original 5 people,");
+            	System.out.println("but you will instead hit and kill 1 person on the tracks");
+            	System.out.println("Do you pull the lever? Option 1 is yes and option 2 is no");
             }
         }, 
         new question()
         {
             public void ask()
             {
-            	System.out.println("Fate and Free Will Placeholder");
+            	System.out.println("Do people have free will or is everyone's lives and decisions predetermined?");
+            	System.out.println("Option 1 is everyone has free will and option 2 is everything is predetermiend.");
             }
         }, 
         new question()
         {
             public void ask()
             {
-            	System.out.println("Religion Placeholder");
+            	System.out.println("Will religion eventually phase out or will it stay as long as the human race exists?");
+            	System.out.println("It eventually phasing out is option 1 and it staying forever is option 2");
             }
         }, 
         new question()
         {
             public void ask()
             {
-            	System.out.println("Corruptability of Complete Power Placeholder");
+            	System.out.println("Does absolute power absolutely corrupt?");
+            	System.out.println("Yes of course, is option 1 and no definitely not is option 2");
             }
         }, 
         new question()
         {
             public void ask()
             {
-            	System.out.println("Necessity of Suffering Placeholder");
+            	System.out.println("Is human suffering a necessary part for humans to stay, well, human?");
+            	System.out.println("Is what separates humans from other animals their ability to feel pain and emotions?");
+            	System.out.println("Obviously yes is option 1, and of course not is option 2");
             }
         }
     };
@@ -141,7 +149,7 @@ public class Th1nk3r {
         Scanner in = new Scanner( System.in );
         System.out.println("Hello, what's your name?" );
         String name = in.nextLine();
-        System.out.println("Hi " + name + ", my name is Th1nk3r.");
+        System.out.println("\nHi " + name + ", my name is Th1nk3r.\n");
         System.out.println("Have you ever thought about what it means to be alive \nor what your existence means in great vastness of the universe?" );
         System.out.println("Are humans special creatures in this world?");
         System.out.println("Do humans have a predestined goal, \nor is it their choice to a purpose for themselves?");
@@ -154,8 +162,8 @@ public class Th1nk3r {
         System.out.println("Should we just use what the majority of people think to decide on the right answer?");
         System.out.println("Should we include future people born to this as well?");
         System.out.println("Who knows, certainly I don't.");
-        System.out.println("I do however hope to show people what others think is a solution\nto one of these questions");
-        System.out.println("I would like your input as well");
+        System.out.println("I do however hope to show people what others think is a solution\nto these questions");
+        System.out.println("I would like your input as well for this endeavor.");
         
         for(int i = 0; i < 5; i++)
         {
